@@ -5,7 +5,7 @@
 
 ---
 
-## Grupo 05 - BCC 2A - Unimar
+## Grupo 04 - BCC 2A - Unimar
 
 | NOME                              |     RA    |
 | --------------------------------- | :-------: |
@@ -25,10 +25,10 @@
 6. No terminal, digitar "*composer*" para verificar se a instalação ocorreu efetivamente.
    - Se o composer não for instalado corretamente, **verifique** a configuração de instalação e tente novamente.
 7. Acesse o link do GitHub com os **arquivos do código-fonte** do projeto.
-8. Baixe a pasta intitulada **P1G5BCC2**.
+8. Baixe a pasta intitulada **P1G4BCC2**.
 9. Volte ao Visual Code Studio e clicle em *File*.
 10.  Selecione a opção *Open a Folder*.
-11.  Selecione a pasta **P1G5BCC2**.
+11.  Selecione a pasta **P1G4BCC2**.
 12.  Com o terminal aberto, digite "*php index.php*" e, em seguida, aperte a tecla *enter*.
 
 ---
