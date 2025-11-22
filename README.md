@@ -1,7 +1,7 @@
 
 # Sistema de Avaliação de Jogos
 
-**P1 - Programação Orientada à Objetos** - Profº Gustavo Marttos
+**P2 - Programação Orientada à Objetos** - Profº Gustavo Marttos
 
 ---
 
