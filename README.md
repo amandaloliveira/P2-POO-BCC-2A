@@ -28,7 +28,7 @@
 8. Baixe a pasta intitulada **P1G4BCC2**.
 9. Volte ao Visual Code Studio e clicle em *File*.
 10.  Selecione a opção *Open a Folder*.
-11.  Selecione a pasta **P1G4BCC2**.
+11.  Selecione a pasta **P2_POO_G04_BCC2**.
 12.  Com o terminal aberto, digite "*php index.php*" e, em seguida, aperte a tecla *enter*.
 
 ---
