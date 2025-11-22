@@ -27,6 +27,8 @@ Já as instruções *use Unimar\Poo\Class* é um comando para importar as classe
 
 Esta é uma classe que não possui atributos próprios declarados no corpo do nosso código, sendo inicialiados através de um método Construtor. Na verdade, a classe Admin utiliza os atributos definidos na sua classe mãe (Pessoa).
 
+---
+
 **Métodos**
 | MÉTODO               |   FUNÇÃO  | RETORNO |
 | -------------------- | --------- | :-----: |
