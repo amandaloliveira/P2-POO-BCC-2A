@@ -8,9 +8,9 @@ O principal objetivo é demonstrar o uso dos quatro pilares da POO (Abstração,
 ---
 
 # Sumário
-- [01 - Inicialização](#inicialização)
-- [02 - Loop Principal](#loop-principal)
-- [03 - Encerramento](#encerramento)
+- [01 - Inicialização](#1-inicialização)
+- [02 - Loop Principal](#2-loop-principal)
+- [03 - Encerramento](#3-encerramento)
 
 ---
 
