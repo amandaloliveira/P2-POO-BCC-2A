@@ -8,7 +8,7 @@ O principal objetivo é demonstrar o uso dos quatro pilares da POO (Abstração,
 ---
 
 # índice
-- [01 - Inicialização](#inicialização)
+- [01 - Inicialização](#inicializacao)
 - [02 - Loop Principal](#loop-principal)
 - [03 - Encerramento](#encerramento)
 
@@ -69,7 +69,7 @@ Embora as definições completas das classes não estejam no trecho fornecido (u
 O código principal (<?php ...) simula o ponto de entrada da aplicação e é dividido em três etapas principais:
 
 ## 1. Inicialização
-[⬅️ Voltar ao índice](#índice)
+[⬅️ Voltar ao índice](#indice)
 
 *Inclusão de Classes*: require_once 'vendor/autoload.php'; carrega as classes via Autoloading (padrão de boas práticas). Além de indicar importação das classes através do comando *use\Unimar\Poo\Class*.
 
@@ -128,7 +128,7 @@ Ação Inicial de Exemplo: O $avaliador faz uma avaliação inicial no jogo "Sal
 ---
 
 ## 2. Loop Principal
-[⬅️ Voltar ao índice](#índice)
+[⬅️ Voltar ao índice](#indice)
 
 O sistema entra em um loop infinito (while (true)) para simular uma aplicação de console interativa, oferecendo menus com base no estado de autenticação do usuário.
 
@@ -1036,7 +1036,7 @@ As opções (1 a 13) chamam métodos exclusivos da classe Avaliador (como $usuar
 ---
 
 ## 3. Encerramento
-[⬅️ Voltar ao índice](#índice)
+[⬅️ Voltar ao índice](#indice)
 
 O loop pode ser quebrado nas seguintes situações:
 
