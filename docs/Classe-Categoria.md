@@ -9,6 +9,51 @@ A classe categoria [...].
 
 Foi desenvolvida uma nova classe responsável por representar as categorias no sistema. Esta classe atua como um contêiner lógico, possuindo um atributo para o nome e uma lista interna (array) para armazenar as referências aos objetos Jogo associados a ela. Foram implementados métodos para recuperar essa lista e para adicionar novos jogos, garantindo o encapsulamento dos dados.
 
+    private string $nome;
+    private array $jogos = [];
+
+    public function __construct(string $nome){
+        $this->nome = $nome;
+    }
+
+Possui dois atributos privados, sendo uma string *$nome* e um array *$jogos*.
+
+Para a inicialização de um objeto Categoria, precisamos apenas de seu nome (que é indicado como parâmetro no método construtor).
+
+    public function getNome(): string{
+        return $this->nome;
+    }
+
+    public function setNome(string $nome): void{
+        $this->nome = $nome;
+    }
+    
+    public function getJogos(): array{
+        return $this->jogos; 
+    }
+
+Possui *getters e setters* para o acesso e/ou modificação dos atributos privados presentes na classe Categoria.
+- *getNome*: Retorna uma variável *$nome* do tipo *string*.
+- *getJogos*: Retorna uma variável *$jogos* do tipo *array*.
+- *setNome*: Define uma variável *$nome* do tipo *string*.
+
+      public function adicionarjogo(jogo $jogo): void{
+        $this->jogos[] = $jogo;
+      }
+
+      public function removerJogo(Jogo $jogo): void{
+        $jogoParaRemover = array_search($jogo, $this->jogos, true);
+        
+        if ($jogoParaRemover !== false) {
+            unset($this->jogos[$jogoParaRemover]);
+            $this->jogos = array_values($this->jogos); 
+        }
+      }
+
+Também são definidos dois métodos na classe:
+- *adicionarJogo*: Utiliza como parâmetro um objeto do tipo Jogo para adicioná-lo ao array *$jogos*.
+- *removerJogo*: Remove um objeto Jogo do array $jogos. Utiliza array_search com comparação estrita (true) para encontrar a posição do objeto e, se encontrado, usa unset para removê-lo, seguido por array_values para reindexar o array e manter a integridade da lista. 
+
 ---
 
 2. **Refatoração da Classe Jogo**
