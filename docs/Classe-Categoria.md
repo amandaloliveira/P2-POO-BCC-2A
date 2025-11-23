@@ -1,7 +1,7 @@
 # Classe Categoria
 [⬅️ Voltar à página principal](../README.md)
 
-A classe categoria [...].
+A classe categoria representa as categorias que ops jogos do sistema podem estar inseridos.
 
 ---
 
