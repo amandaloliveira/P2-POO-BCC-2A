@@ -28,11 +28,11 @@ A classe Avaliador define três atributos privados, aplicando o princípio do En
 ***A. Gerenciamento de Avaliações (Relação com Jogo e Avaliacao)***
 | MÉTODO | RETORNO | DESCRIÇÃO | PRINCÍPIO POO |
 | ------ | ------- | --------- | :-----------: |
-| avaliarJogo(Jogo $jogo, float $nota, bool $recomenda) | ?Avaliacao | Cria uma nova Avaliacao para um Jogo específico, com nota e recomendação. Impede avaliações duplicadas para o mesmo jogo. Adiciona a avaliação à lista do avaliador e notifica o objeto Jogo sobre a nova avaliação ($jogo->receberAvaliacao()) | Abstração/Composição |
+| avaliarJogo(Jogo $jogo, float $nota, bool $recomenda) | ?Avaliacao | Cria uma nova Avaliacao para um Jogo específico, com nota e recomendação. Impede avaliações duplicadas para o mesmo jogo. Adiciona a avaliação à lista do avaliador e notifica o objeto Jogo sobre a nova avaliação ($jogo->receberAvaliacao()) | Abstração |
 | editarAvaliacao(Avaliacao $avaliacao, float $novaNota, bool $novoRecomenda) | void | Permite alterar a nota e recomendação de uma avaliação existente, apenas se for uma avaliação feita pelo próprio avaliador. Após a edição, dispara o recálculo da média do jogo. | Encapsulamento |
 | excluirAvaliacao(Avaliacao $avaliacao) | void | Remove a avaliação da lista do avaliador e notifica o Jogo para que remova a avaliação de seu registro. Verifica a propriedade da avaliação | Encapsulamento |
 | getMinhasAvaliacoes() | array | Retorna a lista de todas as avaliações feitas pelo avaliador. (Getter) | Encapsulamento |
-| limparAvaliacoesDeJogoExcluido(Jogo $jogoExcluido) | void | Método de manutenção que remove todas as avaliações feitas por este avaliador que se referiam a um Jogo que foi excluído do sistema (pode ter sido acionado por outro objeto). | Abstração/Manutenção |
+| limparAvaliacoesDeJogoExcluido(Jogo $jogoExcluido) | void | Método de manutenção que remove todas as avaliações feitas por este avaliador que se referiam a um Jogo que foi excluído do sistema (pode ter sido acionado por outro objeto). | Abstração |
 
 ***B. Gerenciamento de Jogos Favoritos (Relação com Jogo)***
 | MÉTODO | RETORNO | DESCRIÇÃO |
@@ -45,13 +45,13 @@ A classe Avaliador define três atributos privados, aplicando o princípio do En
 ***C. Gerenciamento de Comunidades e Comentários***
 | MÉTODO | RETORNO | DESCRIÇÃO | PRINCÍPIO POO |
 | ------ | ------- | --------- | :-----------: |
-| entrarComunidade(Comunidade $comunidade) | bool | Adiciona o avaliador a uma Comunidade e notifica a Comunidade para que adicione o avaliador como membro. Previne a entrada duplicada. |Abstração/Acoplamento |
-| sairComunidade(Comunidade $comunidade) | bool | Remove o avaliador de uma Comunidade e notifica a Comunidade para remover o membro. | Abstração/Acoplamento |
+| entrarComunidade(Comunidade $comunidade) | bool | Adiciona o avaliador a uma Comunidade e notifica a Comunidade para que adicione o avaliador como membro. Previne a entrada duplicada. |Abstração |
+| sairComunidade(Comunidade $comunidade) | bool | Remove o avaliador de uma Comunidade e notifica a Comunidade para remover o membro. | Abstração |
 | publicarComentario(Comunidade $comunidade, string $texto) |  void | Permite publicar um novo Comentario na Comunidade, desde que o avaliador seja membro dela. Lança uma exceção em caso contrário (Boa Prática). | Abstração |
 | editarComentario(Comentario $comentario, string $novoTexto) | bool | Permite editar o texto de um Comentario, apenas se o avaliador for o autor original ($comentario->getAutor() === $this). | Encapsulamento |
 | excluirComentario(Comunidade $comunidade, Comentario $comentario) | bool | Permite excluir um Comentario de uma Comunidade, apenas se o avaliador for o autor. | Encapsulamento |
 | getMinhasComunidades() | array | Retorna a lista de comunidades do qual o avaliador é membro. | Encapsulamento |
-| limparComunidadeExcluida(Comunidade $comunidadeExcluida) | void | Método de manutenção para remover uma Comunidade da lista, caso ela tenha sido extinta. | Abstração/Manutenção |
+| limparComunidadeExcluida(Comunidade $comunidadeExcluida) | void | Método de manutenção para remover uma Comunidade da lista, caso ela tenha sido extinta. | Abstração |
 
 ***D. Polimorfismo***
 | MÉTODO | RETORNO | DESCRIÇÃO | PRINCÍPIO POO |
