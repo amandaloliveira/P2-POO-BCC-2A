@@ -1,7 +1,7 @@
 # Classe Avaliação
 [⬅️ Voltar à página principal](../README.md)
 
-A classe Avaliacao atua como uma estrutura de dados ou modelo que conecta um avaliador ( Avaliador), um jogo ( Jogo) e os detalhes específicos da avaliação (pontuação/ notae recomendação/ recomenda).
+A classe Avaliacao atua como uma estrutura de dados ou modelo que conecta um avaliador ( Avaliador), um jogo ( Jogo) e os detalhes específicos da avaliação (pontuação/ nota e recomendação/ recomenda).
 
 ---
 
