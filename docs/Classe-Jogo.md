@@ -5,4 +5,4 @@ A classe Jogo é uma classe que permite a criação da instância **Jogo**, alé
 
 ---
 
-*ADICIONAR EXPLICAÇÃO DO IDE E AS ALTERAÇÕES FEITAS*
+a
