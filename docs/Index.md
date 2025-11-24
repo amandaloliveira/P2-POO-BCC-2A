@@ -587,7 +587,7 @@ As opções (1 a 12) chamam métodos exclusivos da classe Admin (como $usuarioLo
 
 ---
 
-Estado 3**: Usuário Logado como Avaliador ($usuarioLogado instanceof Avaliador)
+**Estado 3**: Usuário Logado como Avaliador ($usuarioLogado instanceof Avaliador)
 
 Exibe o Menu de Usuário Padrão (Avaliar, Ver Detalhes, Favoritos, Minha Conta, Comunidades).
 
